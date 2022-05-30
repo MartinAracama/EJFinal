@@ -48,7 +48,7 @@ h1 {
 p {
   color: #a8dbf4;
   font-size: small;
-  width: 300px;
+  width: 100%;
   padding: 5px;
   font-weight: 500; }
 
@@ -69,11 +69,10 @@ h3 {
   text-align: justify; }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
   gap: 1.5em;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   background-color: #062f4a;
   margin: 1.5em auto;
@@ -85,32 +84,6 @@ h3 {
   border: 1px solid #a8dbf4;
   border-radius: 5px;
   background: #062f4a; }
-
-.bienvenidos {
-  padding: 15px;
-  margin: 5px;
-  border: 1px solid #a8dbf4;
-  border-radius: 5px;
-  background: #062f4a;
-  grid-column: 2/4;
-  grid-row: 2/3; }
-
-.imagen-edificio {
-  margin: 20px;
-  width: 400px;
-  height: 800px;
-  grid-column: 1/2;
-  grid-row: 1/3; }
-
-.titulo {
-  grid-column: 2/4;
-  grid-row: 1/2; }
-
-.foto-edificio {
-  object-fit: cover;
-  border-radius: 5px;
-  width: 400px;
-  height: 800px; }
 
 .bienvenida {
   display: grid;
@@ -160,6 +133,7 @@ h3 {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    width: 80%;
     grid-column: 1/2;
     grid-row: 2/3; }
   .grilla-socios .socios02 {
@@ -167,6 +141,7 @@ h3 {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    width: 80%;
     grid-column: 2/3;
     grid-row: 2/3; }
   .grilla-socios .socios03 {
@@ -174,6 +149,7 @@ h3 {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    width: 80%;
     grid-column: 1/2;
     grid-row: 3/4; }
   .grilla-socios .socios04 {
@@ -181,6 +157,7 @@ h3 {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    width: 80%;
     grid-column: 2/3;
     grid-row: 3/4; }
 
@@ -193,7 +170,7 @@ h3 {
   .grilla-socios {
     display: flex;
     flex-direction: column;
-    width: 60vh; } }
+    width: 40vh; } }
 
 .grilla-servicios {
   display: grid;
@@ -207,9 +184,7 @@ h3 {
   margin: 1.5em auto;
   padding: 5px; }
   .grilla-servicios .titulo {
-    grid-column: 1/4;
-    border: 1px solid #a8dbf4;
-    border-radius: 5px;
+    grid-column: 1/2;
     padding: 5px;
     margin: 5px; }
   .grilla-servicios .segundo-titulo {
@@ -239,6 +214,7 @@ h3 {
 
 .areas-de-practica {
   text-align: center;
+  grid-template-columns: 1/4;
   background-color: #04355a;
   color: #a8dbf4;
   border-radius: 5px;
@@ -275,7 +251,7 @@ h3 {
   .grilla-servicios {
     display: flex;
     flex-direction: column;
-    width: 50vh; } }
+    width: 40vh; } }
 
 @media screen and (max-width: 750px) {
   .letra-parrafo {
@@ -283,32 +259,37 @@ h3 {
 
 .grilla-antecedentes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 200px, 200px;
   grid-template-rows: repeat(5, 100px, auto);
   gap: 1.5em;
   width: 90%;
   max-width: 1200px;
+  justify-items: center;
   background-color: #062f4a;
   margin: 1.5em auto;
   padding: 5px; }
   .grilla-antecedentes .title {
     grid-column: 1/3;
-    grid-row: 1/2; }
+    grid-row: 1/2;
+    text-align: left; }
   .grilla-antecedentes .trayectoria {
-    grid-column: 1/2;
+    grid-column: 1/span 1;
     grid-row: 2/4;
+    width: 55%;
     border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px; }
   .grilla-antecedentes .participaciones {
     grid-column: 2/3;
     grid-row: 2/3;
+    width: 55%;
     border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px; }
   .grilla-antecedentes .consideraciones {
     grid-column: 2/3;
     grid-row: 3/4;
+    width: 55%;
     border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px; }
@@ -324,9 +305,19 @@ h3 {
 .title2 {
   text-align: center;
   background-color: #04355a;
-  color: #f3f3f3;
+  color: #A5DEF1;
   border-radius: 5px;
   padding: 5px; }
+
+@media screen and (max-width: 750px) {
+  .grilla-antecedentes {
+    display: flex;
+    flex-direction: column;
+    width: 70vh; }
+  .video {
+    width: 55%; }
+  .letra-parrafo {
+    font-size: smaller; } }
 
 .nuestras-oficinas {
   display: grid;
@@ -355,7 +346,7 @@ h3 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
-  border: 1px solid #02253f;
+  border: 1px solid #a8dbf4;
   border-radius: 5px;
   padding: 10x;
   justify-content: center; }
@@ -385,7 +376,7 @@ h3 {
   .nuestras-oficinas {
     display: flex;
     flex-direction: column;
-    width: 100vh; } }
+    width: 40vh; } }
 
 h1 {
   -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
