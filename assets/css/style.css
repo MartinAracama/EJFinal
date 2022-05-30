@@ -39,27 +39,27 @@ body {
   transform: scale(1.2); }
 
 h1 {
-  color: #080b64;
+  color: #a8dbf4;
   font-weight: 700;
   font-size: larger;
   padding: 5px;
   display: inline-block; }
 
 p {
-  color: #464242;
+  color: #a8dbf4;
   font-size: small;
   width: 300px;
   padding: 5px;
   font-weight: 500; }
 
 h2 {
-  color: #080b64;
+  color: #a8dbf4;
   padding: 5px;
   font-size: larger; }
 
 h3 {
   text-align: left;
-  color: #080b64;
+  color: #a8dbf4;
   padding: 5px;
   padding-top: 35px;
   font-weight: 600;
@@ -75,23 +75,23 @@ h3 {
   gap: 1.5em;
   width: 100%;
   max-width: 1200px;
-  background-color: #e1f1f3;
+  background-color: #062f4a;
   margin: 1.5em auto;
   padding: 5px; }
 
 .titulo {
   padding: 15px;
   margin: 5px;
-  border: 1px solid #04355a;
+  border: 1px solid #a8dbf4;
   border-radius: 5px;
-  background: #e1f1f3; }
+  background: #062f4a; }
 
 .bienvenidos {
   padding: 15px;
   margin: 5px;
-  border: 1px solid #04355a;
+  border: 1px solid #a8dbf4;
   border-radius: 5px;
-  background: #e1f1f3;
+  background: #062f4a;
   grid-column: 2/4;
   grid-row: 2/3; }
 
@@ -118,58 +118,66 @@ h3 {
   gap: 1.5em;
   width: 95%; }
   .bienvenida .titulo {
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
-    grid-column: 1/4;
+    grid-column: 1/3;
     justify-items: center; }
   .bienvenida .imagen {
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     grid-column: 1/2; }
-  .bienvenida .texto {
-    border: 1px solid #04355a;
-    border-radius: 5px;
-    grid-column: 2/4; }
 
 .grilla-socios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 35px, 1fr, 1fr;
+  justify-items: center;
   gap: 1.5em;
   width: 100%;
   max-width: 1200px;
-  background-color: #e1f1f3;
+  background-color: #062f4a;
   margin: 1.5em auto;
   padding: 5px; }
-  .grilla-socios .titulo {
-    border: 1px solid #04355a;
+  .grilla-socios .titulo-socios {
+    background-color: #062f4a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     grid-column: 1/5; }
+  .grilla-socios .letra-titulo {
+    text-align: justify;
+    color: #a8dbf4; }
+  .grilla-socios .letra-parrafo-titulo {
+    text-align: justify;
+    color: #a8dbf4; }
+  .grilla-socios .nombre-socios {
+    color: #70AFCB; }
+  .grilla-socios .letra-parrafo-socios {
+    color: #A5DEF1; }
   .grilla-socios .socios01 {
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     grid-column: 1/2;
     grid-row: 2/3; }
   .grilla-socios .socios02 {
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     grid-column: 2/3;
     grid-row: 2/3; }
   .grilla-socios .socios03 {
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     grid-column: 1/2;
     grid-row: 3/4; }
   .grilla-socios .socios04 {
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
@@ -178,21 +186,29 @@ h3 {
 
 .imagen {
   width: 200px;
-  height: 200px; }
+  height: auto;
+  border-radius: 150px; }
+
+@media screen and (max-width: 750px) {
+  .grilla-socios {
+    display: flex;
+    flex-direction: column;
+    width: 60vh; } }
 
 .grilla-servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, 100px, auto);
+  justify-items: center;
   gap: 1.5em;
   width: 90%;
   max-width: 1200px;
-  background-color: #e1f1f3;
+  background-color: #062f4a;
   margin: 1.5em auto;
   padding: 5px; }
   .grilla-servicios .titulo {
     grid-column: 1/4;
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px; }
@@ -202,20 +218,20 @@ h3 {
     align-items: center;
     text-align: center;
     padding: 5px;
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     margin: 5px; }
   .grilla-servicios .consultoria01 {
     grid-column: 1/4;
     text-align: center;
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
     text-align: justify; }
 
 .grilla-servicios .areas01 {
-  border: 1px solid #04355a;
+  border: 1px solid #a8dbf4;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
@@ -224,14 +240,14 @@ h3 {
 .areas-de-practica {
   text-align: center;
   background-color: #04355a;
-  color: #f3f3f3;
+  color: #a8dbf4;
   border-radius: 5px;
   padding: 5px; }
 
 .tipo-area {
   text-align: center;
   background-color: #04355a;
-  color: #f3f3f3;
+  color: #70AFCB;
   border-radius: 5px;
   padding: 5px; }
 
@@ -243,9 +259,27 @@ h3 {
 .titulo-consultoria {
   text-align: center;
   background-color: #04355a;
-  color: #f3f3f3;
+  color: #a8dbf4;
   border-radius: 5px;
   padding: 5px; }
+
+.migracion {
+  color: #70AFCB; }
+
+.bandera {
+  width: 90%;
+  height: auto;
+  align-items: center; }
+
+@media screen and (max-width: 750px) {
+  .grilla-servicios {
+    display: flex;
+    flex-direction: column;
+    width: 50vh; } }
+
+@media screen and (max-width: 750px) {
+  .letra-parrafo {
+    font-size: 0.8em; } }
 
 .grilla-antecedentes {
   display: grid;
@@ -254,7 +288,7 @@ h3 {
   gap: 1.5em;
   width: 90%;
   max-width: 1200px;
-  background-color: #e1f1f3;
+  background-color: #062f4a;
   margin: 1.5em auto;
   padding: 5px; }
   .grilla-antecedentes .title {
@@ -263,19 +297,19 @@ h3 {
   .grilla-antecedentes .trayectoria {
     grid-column: 1/2;
     grid-row: 2/4;
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px; }
   .grilla-antecedentes .participaciones {
     grid-column: 2/3;
     grid-row: 2/3;
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px; }
   .grilla-antecedentes .consideraciones {
     grid-column: 2/3;
     grid-row: 3/4;
-    border: 1px solid #04355a;
+    border: 1px solid #a8dbf4;
     border-radius: 5px;
     padding: 5px; }
 
@@ -297,30 +331,29 @@ h3 {
 .nuestras-oficinas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: 15px, 1fr, 50px;
+  flex-wrap: wrap;
   gap: 1.5em;
   width: 90%;
   max-width: 1200px;
-  background-color: #e1f1f3;
+  background-color: #062f4a;
   margin: 1.5em auto;
   padding: 5px; }
 
 .buenos-aires {
   grid-column: 1/2;
+  grid-row: 2/3;
   text-align: center;
-  border: 1px solid #04355a;
+  border: 1px solid #a8dbf4;
   border-radius: 5px;
-  padding: 10x;
-  justify-content: center; }
+  padding: 10x; }
 
 .titulo-ba {
   text-align: center; }
 
-#direccion {
-  text-align: center; }
-
 .madrid {
   grid-column: 2/3;
+  grid-row: 2/3;
   text-align: center;
   border: 1px solid #02253f;
   border-radius: 5px;
@@ -332,14 +365,27 @@ h3 {
 
 .miami {
   grid-column: 3/4;
+  grid-row: 2/3;
   text-align: center;
-  border: 1px solid #04355a;
+  border: 1px solid #a8dbf4;
   border-radius: 5px;
-  padding: 10x;
+  padding: 5px;
   justify-content: center; }
 
 .titulo-miami {
   text-align: center; }
+
+.container-form {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 350px;
+  justify-content: center; }
+
+@media screen and (max-width: 750px) {
+  .nuestras-oficinas {
+    display: flex;
+    flex-direction: column;
+    width: 100vh; } }
 
 h1 {
   -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -503,8 +549,5 @@ footer p {
   color: #f3f3f3;
   text-align: center; }
 
-/*#iconos {
-  font-size: 18px;
-  padding: 0 8px;
-  color: #f3f3f3;
-}*/
+#iconos {
+  margin: 30px; }
